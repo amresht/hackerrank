@@ -68,6 +68,8 @@ class LinkedList:
 
     def deleteNode(self):
         pass
+    # insert a node at a position in linked list
+                        
     def insertNode(self):
         pass
     def reverseList(self):
@@ -88,11 +90,11 @@ if __name__=='__main__':
     llist = LinkedList() 
     # Create the head node of the list
     llist.head = Node(1) 
+    #insert 2nd node
     second = Node(2) 
-    third = Node(3) 
-    
     llist.head.next = second
-    
+    # Insert 3rd node
+    third = Node(3) 
     second.next = third
     
     llist.printList()
