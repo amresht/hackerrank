@@ -70,8 +70,21 @@ class LinkedList:
         pass
     # insert a node at a position in linked list
                         
-    def insertNode(self):
-        pass
+    def insertNode(self, data, position):
+        # create a new node with data
+        new_node = Node(data)
+        
+        if self.head is None:
+                return new_node
+        # set current node as the head of linked list
+        current =  self.head 
+        #loop till the position number is found
+        for _ in range(position):
+            current= current.next
+        current.next = newnode
+        newnode.next = current.next
+        return
+        
     def reverseList(self):
         pass
     
@@ -83,7 +96,7 @@ class LinkedList:
             print (temp.data) 
             temp = temp.next
 
-Code execution starts here 
+#Code execution starts here 
 if __name__=='__main__': 
   
     # Start with the empty list 
