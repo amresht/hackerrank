@@ -4,10 +4,9 @@
 
 class Node:
     
-    def __init__(self, data):
+    def __init__(self, data, next = None):
         self.data = data
-
-        self.next =  None    # link to next node
+        self.next =  next    # link to next node
 
 class LinkedList:
     # initialize with no values 
@@ -35,10 +34,38 @@ class LinkedList:
         if len(res): 
             return \"[\" + res + \"]\"
         else: 
-            return \"[]\"    
+            return \"[]\"
+    
+    # INSERT A NODE A BEGINNING OF LINKED LIST
+    # time complexity is O(1) as there is a fixed number of steps - ONE
+    def newHeadNode(self, data):
+        # create a new node with data
+        new_head = Node(data)
+        # set this as the head of linked list
+        new_head.next = self.head
+        #assign this NEW NODE at the head of the linked list
+        self.head = new_head
+        return
+    
+
+    # INSERT NODE AT END OF LINKED LIST
+    def appendNode(self, data):
+        # create a new node with data
+        new_node = Node(data)
         
-    def appendNode(self):
-        pass
+        if self.head is None:
+                return new_node
+        
+        # set this as the head of linked list
+        last =  self.head 
+        #loop till the end of the list is found
+        while(last.next):
+            last= last.next
+        
+        last.next = new_node
+        
+        return
+
     def deleteNode(self):
         pass
     def insertNode(self):

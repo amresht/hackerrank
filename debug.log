@@ -1,0 +1,12 @@
+[1011/220132.286:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1012/084434.937:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1012/211323.217:ERROR:process_reader_win.cc(127)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1012/211323.217:ERROR:exception_snapshot_win.cc(100)] thread ID 17492 not found in process
+[1012/211323.232:ERROR:process_reader_win.cc(127)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1012/211323.232:ERROR:exception_snapshot_win.cc(100)] thread ID 14720 not found in process
+[1013/152053.470:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1014/152448.999:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1016/104330.713:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\R Tiwari\AppData\Local\Microsoft\Edge\User Data\Crashpad\attachments\74fca6d4-5193-4e60-b74e-476755efe088: The system cannot find the path specified. (0x3)
+[1016/104330.734:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\R Tiwari\AppData\Local\Microsoft\Edge\User Data\Crashpad\attachments\8dcd4fb6-ebc5-43ef-8454-776263e3bf49: The system cannot find the path specified. (0x3)
+[1016/104330.734:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1017/210522.690:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
