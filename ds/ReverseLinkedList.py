@@ -58,7 +58,17 @@ def reverse(head):
     
     return returned
     
-        
+# Function to reverse the linked list using iterations
+def reverse2(head):
+    prev = None
+    current = head
+    while(current is not None):
+        next = current.next
+        current.next = prev
+        prev = current
+        current = next
+    head = prev 
+    return head       
         
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
