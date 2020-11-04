@@ -46,19 +46,23 @@ def print_singly_linked_list(node, sep, fptr):
 #     SinglyLinkedListNode next
 #
 #
+
+# Function to reverse the linked list using recursion
+#Time Complexity: O(n) 
+#Space Complexity: O(1)
 def reverse(head):
     if head == None or head.next == None:
         return head
     
     returned = reverse(head.next)
-    
     head.next.next = head
-    
+
     head.next = None
-    
     return returned
     
 # Function to reverse the linked list using iterations
+#Time Complexity: O(n) 
+#Space Complexity: O(1)
 def reverse2(head):
     prev = None
     current = head
