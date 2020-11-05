@@ -84,7 +84,17 @@ class LinkedList:
         current.next = newnode
         newnode.next = current.next
         return
-        
+
+    # Recursive function to print  
+    # linked list in reverse order 
+    def printReverse(self, head): 
+          
+        if head: 
+            self.printReverse(head.next) 
+            print(head.data, end = ', ') 
+        else: 
+            return
+            
     def reverseList(self):
         pass
     
@@ -109,8 +119,10 @@ if __name__=='__main__':
     # Insert 3rd node
     third = Node(3) 
     second.next = third
-    
+    #PRINT THE LIST
     llist.printList()
-    print(llist)
+    
+    #PRINT LIST IN REVERSE
+    llist.printReverse(llist.head); 
 
  
