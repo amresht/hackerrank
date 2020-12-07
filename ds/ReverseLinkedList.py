@@ -53,7 +53,7 @@ def print_singly_linked_list(node, sep, fptr):
 def reverse(head):
     if head == None or head.next == None:
         return head
-    
+    # recursive call to itself for next node`       ``` 
     returned = reverse(head.next)
     head.next.next = head
 

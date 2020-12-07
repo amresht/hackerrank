@@ -1,0 +1,94 @@
+*AMAZON INTERVIEW*
+
+Please prepare on 3 questions additionally:
+
+What’s your technical strengths and weaknesses – vis-à-vis last years of professional work?
+What are the two most significant accomplishments – 
+1) Where you innovated 
+2) Where you drove against the tide
+  
+How you will make an impact in disrupting last mile delivery challenge at Amazon.
+(it could be specific to the biggest problem in your TEAM)
+
+
+You will be expected to write a *working and bug free production ready code and not a pseudo code*
+Optimize the cod and check for edge cases, null cases, happy cases, etc. before you present the code.
+Syntax, Return statements, Function declaration, Recursive code(mandatory).
+Pointer manipulation, scope of variables, O(log n) lock and O(log n) unlock, initialization.
+Should be able to take into account run-time/space-time complexity, In order & preorder traversals, 
+whether a null is a BST and whether a single node is a BST.
+Should be able to optimize the code, modular programming, & Dynamic Programming.
+ 
+
+*Design: OOPS:*
+
+1    Overloading vs. Overriding.
+2    Encapsulation and inheritance.
+3    inheritance and polymorphism
+4    HLD (Component wise segregation) – HLD provides an overview of a solution, platform, system, product, service or process depicting the components, interfaces and networks that need to be further specified or developed.
+5    LLD (Class & sequence diagram) – is like detailing the HLD. It defines the actual logic for each and every component of the system. Class diagrams with all the methods and relation between classes comes under the LLD.
+6    Design patterns. Design tool if you’ve worked on any.
+
+ 
+
+*Problem Solving Skills*
+
+1. Listen & understand problem statement completely before attempting the solution and avoid jumping on to the solutions abruptly(seek 100% information).
+
+2. Ask more clarifying question and be receptive to hints provided by the interviewers. Articulate and express thoughts clearly & crisp. Make the interviewing experience more interactive.
+
+3. Should be able to deal with ambiguity.
+
+ 
+
+*Algorithm*
+
+1. Sorting, Merging, Searching algorithms techniques.
+
+ 
+
+*Data Structures*
+
+1. Uses and implementation of DS like link-list, queues, arrays, trees, binary trees, stacks, hash map etc. The person should not only have conceptual knowledge, but should its uses).
+2. BFS, DFS, maximum number of nodes at a level of binary trees.
+
+ 
+Amazon Leadership principles (http://india.amazon.com/AmazonValues.html). We expect our engineers to demonstrates few leadership principles relevant to their roles.
+
+*Ownership*
+
+1. Bias for action(taking right decisions, backed by enough data. Be calculative while making important decisions)
+2. Being Self-Critical – Should be able to identify the reasons for failure, admit and work backwards to improve it.
+3. Customer Obsession
+    Deep Dive
+    Verbally Self Critical
+    Delivers Results
+
+Note  : While we share this information with you, we also wish to inform that the scope of interview is not limited to the above inputs only.
+
+ 
+*Requirements:*
+
+Expert knowledge of Java, C/C++ or C# is a must.
+Solid understanding of Object-Oriented design and concepts.
+Good knowledge & experience in Data structures & Algorithms.
+Passion for building scalable, global, complex systems to solve problems with proven ability to deliver high quality software.
+Innovative and creative with Web technologies to build high performing websites and web services.
+Self-directed and capable of working effectively in a highly innovative and fast-paced environment.
+BS or MS in Computer Science or in a relevant Engineering discipline.
+Some useful links you might want to visit for you preparation:
+
+	 
+
+*AWS Architecture Center*
+
+	Distributed computing - http://en.wikipedia.org/wiki/Distributed_computing
+	Whitepapers on Architecture - http://aws.amazon.com/architecture/
+	Watch & learn - http://aws.amazon.com/resources/webinars/
+	Code Samples from Amazon - http://aws.amazon.com/code
+
+*Some wiki references that might want to deep dive on:*
+
+	Design patterns - http://en.wikipedia.org/wiki/Software_design_pattern
+	Data Structures - http://en.wikipedia.org/wiki/List_of_data_structures
+	Time complexity - http://en.wikipedia.org/wiki/Time_complexity
