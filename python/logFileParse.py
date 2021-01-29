@@ -39,37 +39,6 @@ with open(output_filename, "a") as out_file:
 # this method will rename the file name to a backup path
 def rename_file(old_filename, new_filename):
     os.rename(r'old_filename',r'old_filename')
-    
-def stop(self):
-    """
-    Stop the daemon
-    """
-    # Get the pid from the pidfile
-    try:
-        pf = file(self.pidfile,'r')
-        pid = int(pf.read().strip())
-        pf.close()
-    except IOError:
-        pid = None
 
-    if not pid:
-        message = "pidfile %s does not exist. Daemon not running?\n"
-        sys.stderr.write(message % self.pidfile)
-        return # not an error in a restart
-
-    # Try killing the daemon process       
-    try:
-        while 1:
-            os.kill(pid, SIGTERM)
-            time.sleep(0.1)
-    except OSError, err:
-        err = str(err)
-        if err.find("No such process") > 0:
-            if os.path.exists(self.pidfile):
-                os.remove(self.pidfile)
-        else:
-            print str(err)
-            sys.exit(1)
-                                
-def sigterm_listen():
+       
     
