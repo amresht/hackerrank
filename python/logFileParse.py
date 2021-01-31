@@ -27,7 +27,8 @@ output_filename = os.path.normpath("output/parsed_lines.log")
 #global variable for error count 
 error_count =  0;
 #global variable for error text 
-error_text =  [];
+error_list = []
+error_text =  "";
 
 # create object of gracefulstop class 
 runner = GracefulStop()
@@ -40,9 +41,11 @@ while not killer.kill_now:
                 # If log line matches our regex, print to console, and output file
                 if (line_regex.search(line)):
                     error_count = error_count+1
-                    error_text.append(line)
+                    error_list.append(line)
             # Once every 60s we need to send email with this errors and clear this list
-            if (time.time() - starttime % 60==60)
+            if (time.time() - starttime % 60 ==0):
+                send_email(error_list.join())
+                error_list =[]
                 
     else:
         #take a backup and make a new empty file 
@@ -50,7 +53,6 @@ while not killer.kill_now:
         print ("File size crossed max threshold, renamed to" + backup_filename)
         # open the log file in write mode
         open(input_filename, "w")
-        send_email(msg)
 
     
 
