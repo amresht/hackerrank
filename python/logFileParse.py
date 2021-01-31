@@ -11,6 +11,11 @@ error_string  = "Error"
 # Regex used to match relevant loglines (in this case, a specific string)
 line_regex = re.compile(error_string, re.IGNORECASE)
 
+#NOTE THE START TIME OF SCRIPT 
+start = time.time()
+
+
+
 
 # Input file, from where the matched loglines will be copied 
 input_filename  = 'G:\\test\\www_log.log'
@@ -35,14 +40,17 @@ while not killer.kill_now:
                 # If log line matches our regex, print to console, and output file
                 if (line_regex.search(line)):
                     error_count = error_count+1
-                    error_text.append(line) 
+                    error_text.append(line)
+            # Once every 60s we need to send email with this errors and clear this list
+            if (time.time() - starttime % 60==60)
+                
     else:
-        #take a backup and mak a new file 
-         rename_file(input_filename, backup_filename)
-         print ("File size crossed max threshold, renamed to" + backup_filename)
-         # open the log file in write mode
-         open(input_filename, "w")
-         
+        #take a backup and make a new empty file 
+        rename_file(input_filename, backup_filename)
+        print ("File size crossed max threshold, renamed to" + backup_filename)
+        # open the log file in write mode
+        open(input_filename, "w")
+        send_email(msg)
 
     
 
