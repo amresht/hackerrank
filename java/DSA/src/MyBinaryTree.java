@@ -72,12 +72,12 @@ public class MyBinaryTree {
 	
 	public static void main(String[] args) {
 		MyBinaryTree tree = new MyBinaryTree();
-		//														 [ ROOT ]
-		tree.root = new Node(1);					//				1
-		tree.root.left = new Node(2);				//		     /	  \
-		tree.root.right = new Node(3);				//			2		3
-		tree.root.right.left = new Node(4);			//		  		  /	  \
-		tree.root.right.right = new Node(5);		//				4		5
+
+		tree.root = new Node(1);
+		tree.root.left = new Node(2);
+		tree.root.right = new Node(3);
+		tree.root.right.left = new Node(4);
+		tree.root.right.right = new Node(5);
 		
 		System.out.print("\ninOrderTraversal ");
 		inOrderTraversal(tree.root);
