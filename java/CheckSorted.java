@@ -1,3 +1,7 @@
+/*
+ * @author      Amresh
+ * @TITLE       FIND WHETHER A GIVEN ARRAY IS SORTED
+*/
 import java.io.*;
 
 public class CheckSorted {
