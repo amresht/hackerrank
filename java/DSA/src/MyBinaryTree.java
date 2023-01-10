@@ -43,7 +43,7 @@ public class MyBinaryTree {
 		// if root is not null 
 		if (root != null) {
 			inOrderTraversal(root.left);
-			System.out.println(root.key);
+			System.out.print(root.key + " " );
 			inOrderTraversal(root.right);
 		}
 		return;
@@ -52,7 +52,7 @@ public class MyBinaryTree {
 	public static void preOrderTraversal(Node root) {
 		// if root is not null 
 		if (root != null) {
-			System.out.println(root.key);
+			System.out.print(root.key + " " );
 			preOrderTraversal(root.left);
 			preOrderTraversal(root.right);
 		}
@@ -64,7 +64,7 @@ public class MyBinaryTree {
 		if (root != null) {
 			postOrderTraversal(root.left);
 			postOrderTraversal(root.right);
-			System.out.println(root.key);
+			System.out.print(root.key + " " );
 		}
 		return;		
 	}	
@@ -79,11 +79,11 @@ public class MyBinaryTree {
 		tree.root.right.left = new Node(4);			//		  		  /	  \
 		tree.root.right.right = new Node(5);		//				4		5
 		
-		System.out.println("inOrderTraversal");
+		System.out.print("\ninOrderTraversal ");
 		inOrderTraversal(tree.root);
-		System.out.println("preOrderTraversal");
+		System.out.print("\npreOrderTraversal ");
 		preOrderTraversal(tree.root);
-		System.out.println("postOrderTraversal");
+		System.out.print("\npostOrderTraversal ");
 		postOrderTraversal(tree.root);		
 	}
 
