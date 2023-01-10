@@ -3,7 +3,7 @@
  * In, Pre, Post order
  * @author			Amresh Tripathi
  * @version			1.0
- * @Date			10-JAN-2023
+ * @date			10-JAN-2023
  * */
 
 
@@ -23,14 +23,68 @@ class Node {
 }
 
 public class MyBinaryTree {
+	// each binary tree has a root node at the very least
+	Node root;
 
+	public MyBinaryTree(int nodeValue) {
+		// create root node if a value is passed
+		root = new Node(nodeValue);
+		
+	}
+	
 	public MyBinaryTree() {
-		// TODO Auto-generated constructor stub
+		// A null tree with empty root node
+		root = null;
+		
+	}
+	
+	
+	public static void inOrderTraversal(Node root) {
+		// if root is not null 
+		if (root != null) {
+			inOrderTraversal(root.left);
+			System.out.println(root.key);
+			inOrderTraversal(root.right);
+		}
+		return;
+	}
+	
+	public static void preOrderTraversal(Node root) {
+		// if root is not null 
+		if (root != null) {
+			System.out.println(root.key);
+			preOrderTraversal(root.left);
+			preOrderTraversal(root.right);
+		}
+		return;		
 	}
 
+	public static void postOrderTraversal(Node root) {
+		// if root is not null 
+		if (root != null) {
+			postOrderTraversal(root.left);
+			postOrderTraversal(root.right);
+			System.out.println(root.key);
+		}
+		return;		
+	}	
+	
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		MyBinaryTree tree = new MyBinaryTree();
+		//														 [ ROOT ]
+		tree.root = new Node(1);					//				1
+		tree.root.left = new Node(2);				//		     /	  \
+		tree.root.right = new Node(3);				//			2		3
+		tree.root.right.left = new Node(4);			//		  		  /	  \
+		tree.root.right.right = new Node(5);		//				4		5
+		
+		System.out.println("inOrderTraversal");
+		inOrderTraversal(tree.root);
+		System.out.println("preOrderTraversal");
+		preOrderTraversal(tree.root);
+		System.out.println("postOrderTraversal");
+		postOrderTraversal(tree.root);		
 	}
 
 }
