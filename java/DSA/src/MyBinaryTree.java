@@ -79,6 +79,7 @@ public class MyBinaryTree {
 		tree.root.right.left = new Node(4);
 		tree.root.right.right = new Node(5);
 		
+		
 		System.out.print("\ninOrderTraversal ");
 		inOrderTraversal(tree.root);
 		System.out.print("\npreOrderTraversal ");
