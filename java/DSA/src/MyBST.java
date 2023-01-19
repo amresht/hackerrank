@@ -21,11 +21,11 @@ public class MyBST {
 		root.right.left = new Node(12);
 		root.right.right = new Node(18);
 		
-    	int x=20;
-    	
-    	root=insert(root,x);
-    	inOrderTraversal(root);		
-
+		int x=20;
+		// insert a new node in the tree
+		root=insert(root, x);
+		inOrderTraversal(root);
+		
 	}
 
 	
