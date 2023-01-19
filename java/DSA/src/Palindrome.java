@@ -12,12 +12,13 @@ public class Palindrome {
 			return true;
 		}
 		
+		// recursive call at the second part of next statement
 		return( (str.charAt(start)== str.charAt(end))   &&   isPalindrome(str, start +1, end-1)  );
 		
 	}
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// Get the input  string from command prompt
 		String str = args[0];
 		int start = 0;
 		int end = str.length() -1;	// last element is length -1
