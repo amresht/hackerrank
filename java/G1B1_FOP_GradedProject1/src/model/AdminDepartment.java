@@ -1,6 +1,6 @@
 /**
  * @class           Admin Department Class 
- * @author          Amresh Tripathi
+ * @author          Amresh Tripathi, Nayan K, Ajinkya Umathe, Kaushik Ruppara, Mayank Singh, Raj A Das
  * @date            16-Mar-2023
  * @version         1.0
  */
