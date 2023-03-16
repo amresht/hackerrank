@@ -4,23 +4,9 @@
  * @author			Amresh Tripathi
  * @version			1.0
  * @date			10-JAN-2023
+*  @includes	The Node class is required from same folder
  * */
 
-
-class Node {
-	int key;
-	Node left, right;
-	
-	public Node() {
-		key = -1;
-		left=right=null;
-	}
-	
-	public Node(int item) {
-		key = item;
-		left=right=null;
-	}
-}
 
 public class MyBinaryTree {
 	// each binary tree has a root node at the very least
