@@ -1,4 +1,4 @@
-/*
+s/*
  * @desc		De-duplicate an array using hashmap.  a sorted array using efficient method removeDuplicates
  * 				A HashMap retains a unique unordered key value pairs of items 
  * @author		Amresh Tripathi
