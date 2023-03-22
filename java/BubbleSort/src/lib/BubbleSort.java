@@ -1,6 +1,6 @@
 /**
  * @class          BubbleSort Class 
- * @author          Amresh Tripathi, Nayan K, Ajinkya Umathe, Kaushik Ruppara, Mayank Singh, Raj A Das, 
+ * @author          Amresh Tripathi 
  * @date            20-Mar-2023
  * @version         1.0
  */
